@@ -2,6 +2,7 @@
 echo "Please wait."
 wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-76acdbe9.tgz
 tar zxf nakasi-ktu84p-factory-76acdbe9.tgz
+rm nakasi-ktu84p-factory-76acdbe9.tgz
 cd nakasi-ktu84p
 unzip image-nakasi-ktu84p.zip
 cd ../

@@ -25,6 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     ro.setupwizard.network_required=true
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf:asus
+
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage8.mk)
 
 $(call inherit-product, $(LOCAL_PATH)/device-grouper.mk)
